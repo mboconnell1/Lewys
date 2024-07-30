@@ -55,12 +55,12 @@ class PasswordGenerator:
             + self.special_chars
         )
 
-    """
-    Returns a password conforming to class properties.
-        Returns:
-            password (str): Character string representing generated password.
-    """
     def generate(self) -> str:
+        """
+        Returns a password conforming to class properties.
+            Returns:
+                password (str): Character string representing generated password.
+        """
         if (
             self.min_len < 0
             or self.max_len < 0
